@@ -25,4 +25,25 @@ function calculateBMI() {
 
     else if (weight === "" || isNaN(weight))
         result.innerHTML = "Provide a valid Weight!";
+
+     // If both input is valid, calculate the bmi
+    else {
+
+        // BMI Calculation
+        let bmi = (weight / (height/100)**2).toFixed(1);
+
+        // Dividing as per the bmi conditions
+        if (bmi < 18.5) result.innerHTML =
+            `Your BMI is <span><strong>${bmi}</strong></span> which means You are <strong>Underweight</strong> `;
+
+        else if (bmi >= 18.5 && bmi <= 24.9)
+            result.innerHTML =
+            `Your BMI is <span><strong>${bmi}</strong></span> which means You are <strong>Normal</strong> `;
+
+        else if (bmi >= 25 && bmi <= 29.9) result.innerHTML =
+            `Your BMI is <span><strong>${bmi}</strong></span> which means You are <strong>Overweight</strong> `;
+        
+        else result.innerHTML =
+            `Your BMI is <span><strong>${bmi}</strong></span> which means You are <strong>Obesity</strong> `;
+    }
 }
