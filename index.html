@@ -7,7 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="container">
+        <div class="bmi-title">
+            <h1>Check your BMI</h1>
+            <p>Enter your weight and height below to check your BMI results</p>
+        </div>
+
+        <!--User input Weight-->
+        <div class="input-group">
+            <p>Put your weight in here (KG)</p>
+            <input type="text" id="weight" placeholder="60"/>
+        </div> 
+
+        <!--User input Height-->
+        <div class="input-group">
+            <p>And your height in here (CM)</p>
+            <input type="text" id="height" placeholder="167" />
+        </div>
+
+        <!--Button submit-->
+        <div class="btn-container">
+            <button id="btn">Calculate BMI</button>
+        </div>
+
+        <!--BMI Result Display-->
+        <div id="result"></div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
