@@ -1,3 +1,4 @@
+/*styling all page*/
 * {
     padding: 0;
     margin: 0;
@@ -24,6 +25,7 @@ body {
     text-align: center;
 }
 
+/*styling title*/
 .bmi-title {
   margin-bottom: 30px;
 }
@@ -36,4 +38,23 @@ body {
   text-align: left;
   font-size: 16px;
   font-weight: 500;
+}
+
+/*styling input element*/
+.input-group {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+input::placeholder { 
+  opacity: 0.5; 
 }
