@@ -5,3 +5,17 @@ window.onload = () => {
     // Function for calculating BMI
     button.addEventListener("click", calculateBMI);
 };
+
+function calculateBMI() {
+
+    // Getting input from user into height variable and parse into Int
+    let height = parseInt(document
+        .querySelector("#height").value);
+
+    // Getting input from user into weight variableand parse into Int
+    let weight = parseInt(document
+        .querySelector("#weight").value);
+    
+    // Getting result id
+    let result = document.querySelector("#result");
+}
