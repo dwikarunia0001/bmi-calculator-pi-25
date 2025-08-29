@@ -18,4 +18,11 @@ function calculateBMI() {
     
     // Getting result id
     let result = document.querySelector("#result");
+
+    // Checking the user providing a proper value or not
+    if (height === "" || isNaN(height))
+        result.innerHTML = "Provide a valid Height!";
+
+    else if (weight === "" || isNaN(weight))
+        result.innerHTML = "Provide a valid Weight!";
 }
